@@ -35,7 +35,7 @@ class Dispatcher_model extends CI_Model {
     //    print_r($query->row_array());
        if($query->row_array()){
         $this->db->where('dispatcher_id', $id);
-        return $this->db->update('dispatcher',);
+        return $this->db->update('dispatcher', $data);
        }else{
         return null;
       }
